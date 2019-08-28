@@ -6,7 +6,10 @@ import java.util.SortedMap;
 public class TreeNode {
     String key = null;
     String value = null;
+    
+    TreeNode parent = null;
     List<TreeNode> children = null;
+    
     SortedMap<Long, String> hashRing = null;
 
     public TreeNode(String string) {

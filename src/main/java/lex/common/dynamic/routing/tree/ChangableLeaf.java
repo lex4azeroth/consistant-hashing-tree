@@ -16,7 +16,7 @@ public interface ChangableLeaf {
     void removeLeaf(String path);
 
     /**
-     * Find the full path of certain leaf by input key.
+     * Finds the full path of certain leaf by input key.
      * @param key
      * @return String, full path of the leaf which is hit by key.
      */

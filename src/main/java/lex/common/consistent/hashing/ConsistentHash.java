@@ -54,4 +54,19 @@ public class ConsistentHash {
             }
         }
     }
+    
+    /**
+     * Default hashing algorithm.
+     * 
+     * @return MD5 Hash
+     */
+    public static HashingAlgorithm initMd5Hashing() {
+        return new HashingAlgorithm() {
+
+            @Override
+            public Long hash(Object key) {
+                return md5HashingAlgorithm(key.toString());
+            }
+        };
+    }
 }
